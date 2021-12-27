@@ -1,0 +1,49 @@
+:root {
+  --main-bg-color: #aa854c;
+   --secondary-bg-color: #c7ad85;
+  --container-bg-color: rgba(237,239,240,1);
+}
+
+.micro-theme{
+ color: var(--main-bg-color);
+ }
+
+.micro-theme .container {
+    width: 500px;
+    margin: auto;
+    display: block;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, var( --container-bg-color) 100%);
+}
+
+ .micro-theme .nav {
+    font-weight: 700;
+    text-align: center;
+     border-bottom: 0px solid #f7f0c6; 
+    padding: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+ .micro-theme .contents {
+background-color: #fffdf8;
+}
+.micro-theme .dark {
+    background: rgb(20,114,168) !important;
+    background: linear-gradient( 
+0deg, var(--secondary-bg-color) 0%, var(--main-bg-color) 100%) !important
+}
+
+.micro-theme .dark-invert{
+    background: rgb(20,114,168) !important;
+    background: linear-gradient( 
+0deg, var(--main-bg-color) 0%, var(--secondary-bg-color) 100%) !important
+}
+
+.micro-theme .noti-box {
+    border-left: 20px solid var(--main-bg-color);
+}
+
+.micro-theme .owl-carousel button.active{
+background-color: var(--main-bg-color);
+}

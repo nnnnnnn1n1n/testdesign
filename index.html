@@ -1,0 +1,295 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;600;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../gnui/lib/microtheme.css">
+<link rel="stylesheet" href="../gnui/lib/style.css">
+<link rel="stylesheet" href="../gnui/lib/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="../gnui/lib/OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.theme.default.min.css">
+<script src="../gnui/lib/OwlCarousel2-2.3.4/docs_src/assets/vendors/jquery.min.js"></script>
+<script src="../gnui/lib/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title></title>
+</head>
+<body>
+<div class="container">
+		<div class="nav dark">
+			DASHBOARD
+		</div>
+	<section>
+		<div class="summary-box">
+			<div class="summary-box-left" style="border-right:3px solid #cbcdcd;">
+				<h3 class="mt-0 fw-600">Investment Cost</h3>
+				<h2>281,500</h2>
+			</div>
+			<div class="summary-box-right">
+				<h3 class="mt-0 fw-600">Unrealized return</h3>
+				<h2 class="numplus">+1,300</h2>
+			</div>
+		</div>
+	</section>
+	<section>
+		<h3 class="mlr-5 mb-0">Market Price</h3>
+		<div class="owl-carousel" id="market-carousel">
+          <div class="market-box mlr-5">				
+          	<p class="text-right">GOLD/THB</p>
+	          	<div class="flex mb-5">				
+	          		<h4 class="w-50 text-left numminus">28,300</h4>
+					<h4 class="w-50 text-right numplus">28,350</h4>
+				</div>
+				<p class="text-right fw-400 updatetime">2021-12-23T09:34:58</p>
+			</div>
+           <div class="market-box mlr-5">				
+          	         	<p class="text-right">USD/THB</p>
+	          	<div class="flex mb-5">				
+	          		<h4 class="w-50 text-left numminus">31.05</h4>
+					<h4 class="w-50 text-right numplus">31.15</h4>
+				</div>
+				<p class="text-right fw-400 updatetime">2021-12-23T09:34:58</p>
+			</div>
+			<div class="market-box mlr-5">				
+				<p class="text-right">GOLDSPOT</p>
+	          	<div class="flex mb-5">				
+	          		<h4 class="w-50 text-left numminus">1,805</h4>
+					<h4 class="w-50 text-right numplus">1,807</h4>
+				</div>
+				<p class="text-right fw-400 updatetime">2021-12-23T09:34:58</p>
+			</div>
+			<div class="market-box mlr-5">				
+            	<p class="text-right">FX</p>
+	          	<div class="flex mb-5">				
+	          		<h4 class="w-50 text-left numminus">33.56</h4>
+					<h4 class="w-50 text-right numplus">33.58</h4>
+				</div>
+				<p class="text-right fw-400 updatetime">2021-12-23T09:34:58</p>
+			</div>
+		</div>
+	</section>
+	<section class="mt-0">
+		<h3 class="mlr-5 mb-0">Portfolio</h3>
+		<div class="owl-carousel" id="port-carousel">
+		 <div id="gn-port-carousel">
+          <div class="market-box mlr-5 dark">				
+          	<h2 class="text-left fw-600 mt-10">GOLD NOW</h2>
+	          	<div class="flex mb-5 mt-5">	
+	          		<div class="w-40 text-center" style="border-right:3px solid">
+	          			<h4 class="fw-400">Your Position</h4>
+	          			<h1 id="gn-value" data-val=10>10</h1>
+	          			<h4 class="fw-400">Baht Bar</h4>
+	          		</div>
+					<div class="w-60 p-5">
+	          			<table>
+	          				<tbody>
+	          					<tr>
+	          						<td>Cost</td>
+	          						<td class="text-right">281,500</td>
+	          					</tr>
+	          					<tr>
+	          						<td>Market Price</td>
+	          						<td class="text-right">282,800</td>
+	          					</tr>
+	          					<tr>
+	          						<td>Unreal P/L</td>
+	          						<td class="text-right">+1,300</td>
+	          					</tr>
+	          				</tbody>
+	          			</table>
+	          		</div>
+				</div>
+			</div>
+			<p class="text-center fw-400 updatetime" style="font-size: 14px">ซื้อ-ขายทองคำขั้นต่ำ 5 บาททองคำ</p>	
+		</div>
+		<div id="mc-port-carousel">
+           <div class="market-box mlr-5 dark">				
+          	 <h2 class="text-left fw-600 mt-10">MICRO</h2>	
+	          	<div class="flex mb-5 mt-5">	
+	          		<div class="w-40 text-center" style="border-right:3px solid; max-width: 155px;">
+	          			<h4 class="fw-400">Your Position</h4>
+	          			<h1 id="mc-value" data-val=6265.2841 style="font-size: 25px;">6,265.2841</h1>
+	          			<h4 class="fw-400">Baht Bar</h4>
+	          		</div>
+					<div class="w-60  p-5">
+	          			<table>
+	          				<tbody>
+	          					<tr>
+	          						<td>Cost</td>
+	          						<td class="text-right">281,500</td>
+	          					</tr>
+	          					<tr>
+	          						<td>Market Price</td>
+	          						<td class="text-right">282,800</td>
+	          					</tr>
+	          					<tr>
+	          						<td>Unreal P/L</td>
+	          						<td class="text-right">+1,300</td>
+	          					</tr>
+	          				</tbody>
+	          			</table>
+	          		</div>
+				</div>
+			</div>
+					<p class="text-center fw-400 updatetime" style="font-size: 14px">ซื้อ-ขายทองคำขั้นต่ำ 1000 บาท</p>	
+		</div>
+	</div>
+	</section>
+	<section class="mt-0">
+		<h3 class="mlr-5 mb-0">Announce</h3>
+		<div class="owl-carousel" id="announce-carousel">
+          <div class="noti-box">	
+              <h3 class="mt-2">แจ้งปิดระบบชั่วคราว</h3>
+              <h5 class="m-0">
+              	เนื่องจากวันจันทร์ที่ 14 มกราคม 2564 เวลา 22:00-23.59น. ธนาคารมีการปิดระบบ ทำให้ระบบ GOLD NOW ขอปิดในช่วงเวลาดังกล่าวด้วย
+              </h5>		
+              <p class="text-right fw-400 updatetime">2021-12-22T15:34:09.3400</p>
+			</div>
+			<div class="noti-box">	
+              <h3 class="mt-2">แจ้งผู้ทดสอบผ่าน Android ให้ทำการ Update Version</h3>
+              <h5 class="m-0">
+              	สำหรับคนที่ยังสมัครสมาชิกไม่ได้ ให้ทำการ Update Version เป็น 1.9.2 ได้ที่ลิงก์เดิม ถ้าไม่มีให้กด Update ให้ลบแล้วลงใหม่นะครับ
+              </h5>	
+              <p class="text-right fw-400 updatetime">2021-12-22T15:34:09.3400</p>	
+			</div>
+		</div>
+	</section>
+	    <section class="mt-0 mc-menu">
+		<h3 class="mlr-5 mb-0">Quick Menu</h3>
+		<div class="owl-carousel" id="mc-menu-carousel">
+          <div class="market-box mlr-5 dark cur-pointer">
+          <img src="../screen/bswhite.png">				
+          	<h4 class="text-center fw-400">Buy-Sell</h4>
+			</div>
+           <div class="market-box mlr-5 dark cur-pointer">		
+           <img src="../screen/hiswhite.png">					
+          	         	<h4 class="text-center fw-400">History</h4>
+			</div>
+			<div class="market-box mlr-5 dark cur-pointer">
+			<img src="../screen/witwhite.png">							
+				<h4 class="text-center fw-400">Withdraw</h4>
+			</div>
+		</div>
+	</section>
+	<section class="mt-0" >
+		<h3 class="mlr-5 mb-5">FAQ</h3>
+		<div class="accordion">
+                <div class="heading">1. GOLD NOW คืออะไร ?</div>
+                <div class="contents"><html><head>
+                		<div style="color:#383838;"><p>แอปพลิเคชัน เพื่อการลงทุนในทองคำ พร้อมมอบประสบการณ์ใหม่ ง่ายดายเพียงปลายนิ้ว ประกอบไปด้วยฟีเจอร์เด่นที่น่าสนใจมากมาย อันได้แก่</p><ul><li>สามารถสมัครเพื่อเปิดบัญชีการลงทุนซื้อ-ขายทองคำ 96.5% ได้ทุกที่ ผ่านแอปพลิเคชัน “GOLD NOW”</li><li>สมัครสมาชิกด้วย Face Recognition (การสแกนใบหน้า) ไม่ต้องใช้เอกสาร หรือเดินทางมาที่สาขา</li><li>บริการซื้อ-ขาย ตั้งแต่เวลา 06.00 น. – 02.00 น. ทุกวันจันทร์ – วันศุกร์ และเวลา 09.30 น. – 17.30 น. ทุกวันเสาร์ – วันอาทิตย์</li><li>เชื่อมโยงธุรกรรมซื้อ-ขายทองคำกับบัญชีธนาคารไทยพาณิชย์โดยตรงผ่านแอปพลิเคชัน SCB EASY</li><li>สามารถชำระเงินในการซื้อ และรับเงินจากการขายทองคำแบบเต็มจำนวนทันทีที่มีธุรกรรม ไม่พลาดโอกาสในการทำกำไรในทุกรอบเวลา</li><li>ไม่ต้องวางหลักประกัน และไม่มีค่าธรรมเนียม ในการซื้อ-ขาย</li><li>รับทองคำได้ที่ฮั่วเซ่งเฮงทุกสาขา ตามเวลาให้บริการของแต่ละสาขา</li></ul></div></body></html></div>
+            
+                <div class="heading">2. GOLD NOW สมัครอย่างไร ?</div>
+                <div class="contents">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+            
+                <div class="heading">3. ถ่ายบัตรประชาชนหรือสแกนใบหน้า “ไม่ผ่าน” ต้องทำอย่างไร ?</div>
+                <div class="contents">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+            </div><!--style="margin-bottom: 70px;"-->
+	</section>
+	<div class="navbar dark-invert">
+	    <a href="#">
+	    	<img src="../gnui/bswhite.png">
+	    	<h5 class="text-center fw-400 m-0">Buy-Sell</h5>
+	    </a>	
+	    <a  href="#">
+	    	<img src="../gnui/hiswhite.png">
+	    	<h5 class="text-center fw-400 m-0">History</h5>
+	    </a>
+	    <a  href="#">
+	    	<img src="../gnui/witwhite.png">
+	    	<h5 class="text-center fw-400 m-0">Withdraw</h5>
+	    </a>
+    </div>
+</div>
+<script type="text/javascript">
+	$(document).ready(function(){		
+	  	$("#market-carousel").owlCarousel({
+		      dots: false
+		  });
+
+		$('#port-carousel').owlCarousel({
+			items : 1,
+		    dots: false,
+		    onTranslated: checkActive,
+		    onInitialize:checkActive
+		});
+
+		$.each($('#port-carousel div.owl-item'), function(ind) {
+   		$(this).attr('id', 'port-' + parseInt(ind + 1));
+        });
+
+		function checkActive(){
+			if($('#port-1.active').length>0 || $('#port-2.active').length>0){
+			if($('#port-1.active').length>0){
+	        	$('body').removeClass("micro-theme",500);
+	        }
+	        else{
+	        	$('#mc-value')
+			  .animateNumber(
+			    {
+			      number: $('#mc-value').attr("data-val"),
+			      numberStep: function(now, tween) {
+			        // see http://stackoverflow.com/a/14428340
+			        var formatted = now.toFixed(4).replace(/(\d)(?=(\d{3})+\.)/g, '$1,');
+			        $(tween.elem).text(formatted);
+			      }
+			    },
+			    300
+			  );
+	        	$('body').addClass("micro-theme",500);
+	        }
+			}
+				$('#gn-value')
+			  .animateNumber(
+			    {
+			      number: $('#gn-value').attr("data-val"),
+			      numberStep: function(now, tween) {
+			        // see http://stackoverflow.com/a/14428340
+			        var formatted = now.toFixed(0).replace(/(\d)(?=(\d{3})+\.)/g, '$1,');
+			        $(tween.elem).text(formatted);
+			      }
+			    },
+			    300
+			  );
+		}
+
+	  	$("#announce-carousel").owlCarousel({
+	      items : 1,
+	       dots: true,
+	       navigation:true,
+	       loop:true,
+    		dots:true,
+    		autoplay:true,
+    		autoplayHoverPause:true,
+    		autoplayTimeout:10000,
+	  });
+
+		$("#mc-menu-carousel").owlCarousel({
+	      items : 3,
+	      mouseDrag:false,
+	      touchDrag:false,
+	      pullDrag:false
+	  });
+
+	    $(".accordion").on("click", ".heading", function() {
+
+       $(this).toggleClass("active").next().slideToggle();
+
+       $(".contents").not($(this).next()).slideUp(300);
+                    
+       $(this).siblings().removeClass("active");
+       });
+	});
+
+    var prev = 0;
+	var $window = $(window);
+	var nav = $('.navbar');
+
+    $window.on('scroll', function(){
+	  var scrollTop = $window.scrollTop();
+	  nav.toggleClass('hide', scrollTop > prev);
+	  prev = scrollTop;
+	});
+</script>
+<script src="https://aishek.github.io/jquery-animateNumber/javascripts/jquery.animateNumber.js"></script>
+</body>
+</html>
