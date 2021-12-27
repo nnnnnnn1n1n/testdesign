@@ -59,10 +59,10 @@
 	html{
 			font-family: 'Poppins','Noto Sans Thai', sans-serif !important;
 			color: #0c5584;
-/*			-webkit-transition: all 1s ease;
+			-webkit-transition: all 1s ease;
 		    -moz-transition: all 1s ease;
 		    -o-transition: all 1s ease;
-		    transition: all 1s ease;*/
+		    transition: all 1s ease;
 		}
 		h3{
 			color: #353535;
@@ -81,11 +81,11 @@
 		/*height: 750px;
 		overflow-y: auto;*/
 		}
-body{ 
+/*body{ 
     opacity: 0;
     transition: opacity 2s;
-    -webkit-transition: opacity 2s; /* Safari */
-}
+    -webkit-transition: opacity 2s; /* Safari 
+}*/
     .dark{
   		background: rgb(20,114,168) !important;
 		background: linear-gradient(0deg, rgba(20,114,168,1) 0%, rgba(15,88,137,1) 100%) !important;
